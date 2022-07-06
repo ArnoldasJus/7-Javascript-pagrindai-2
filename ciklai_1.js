@@ -1,4 +1,5 @@
-//let masyvas = [1,5,4,45,12,18,79,46,13,46,48,13,5,3,44,64,17];
+// 1. Sukurkite skriptą, kuris nuorodytame intervale išveda visus lyginius skaičius.
+"use strict";
 
 for(let i=0; i<21 ;i++) {
     if(i % 2 == 0) {
