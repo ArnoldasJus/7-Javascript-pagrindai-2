@@ -9,4 +9,6 @@ document.querySelector('#ikelti_i_masyva').addEventListener('click', function() 
     for(let i = 0; i < masyvas1.length; i++) {
         document.querySelector('#masyvas').innerHTML += '<div>' + masyvas1[i] + '</div>';
     }
+
+    document.querySelector('#nauji_masyvo_duomenys').value = '';
 });
