@@ -7,11 +7,22 @@ let masyvas1 = [8, 'yellow', 'Arvydas'];
 //     masyvas1.push(atsitiktinisSkaicius);
 // }
 
+// document.querySelector('#valyti').addEventListener('click', function(){
+//     console.log('Valymo mygtukas paspaustas');
+//     document.querySelector('#skaiciuotuvo_rezultatas').innerHTML = "";
+// });
 
-//document.querySelector('#masyvas').append(masyvas1);
-for(let i = 0; i < masyvas1.length; i++) {
-    document.querySelector('#masyvas').innerHTML += '<div>' + masyvas1[i] + '</div>';
-}
+document.querySelector('#ikelti_i_masyva').addEventListener('click', function() {
+    let nauji_masyvo_duomenys = document.querySelector('#nauji_masyvo_duomenys').value;
+    masyvas1.push(nauji_masyvo_duomenys);
 
-//document.querySelector('#masyvas').innerHTML = '<div>' + masyvas1 + '</div>';
-console.log(masyvas1);
+    for(let i = 0; i < masyvas1.length; i++) {
+        document.querySelector('#masyvas').innerHTML += '<div>' + masyvas1[i] + '</div>';
+    }
+});
+
+// for(let i = 0; i < masyvas1.length; i++) {
+//     document.querySelector('#masyvas').innerHTML += '<div>' + masyvas1[i] + '</div>';
+// }
+
+// console.log(masyvas1);
